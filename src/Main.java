@@ -20,7 +20,23 @@ public class Main {
 
      switch (opcao){
          case 1:
-             System.out.println("Menu funcionario");
+             System.out.println("Digite seu nome");
+             locacao.getFuncionario().setNome(scanner.next());
+
+             System.out.println("Digite seu CPF");
+             locacao.getFuncionario().setCpf(scanner.nextLong());
+
+             System.out.println("Digite seu endereco");
+             locacao.getFuncionario().getEndereco().setRua(scanner.next());
+             locacao.getFuncionario().getEndereco().setBairro(scanner.next());
+             locacao.getFuncionario().getEndereco().setNumero(scanner.nextInt());
+
+             System.out.println("digite seu salario");
+             locacao.getFuncionario().setSalario(scanner.nextInt());
+
+             System.out.println("Digite seu cargo");
+             locacao.getFuncionario().setCargo(scanner.next());
+
              break;
          case 2:
              System.out.println("Menu cliente");
