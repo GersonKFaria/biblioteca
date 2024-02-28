@@ -20,6 +20,7 @@ public class Main {
 
      switch (opcao){
          case 1:
+             System.out.println("Bem vindo ao cadastro de funcionário");
              System.out.println("Digite seu nome");
              locacao.getFuncionario().setNome(scanner.next());
 
@@ -39,13 +40,43 @@ public class Main {
 
              break;
          case 2:
+             System.out.println("bem vindo ao cadastro de cliente");
              System.out.println("Menu cliente");
+
+             System.out.println("digite o nome do cliente");
+             locacao.getCliente().setNome(scanner.next());
+
+             System.out.println("digite o código");
+             locacao.getCliente().setCodigo(scanner.nextInt());
+
+             System.out.println("digite o CPF do cliente");
+             locacao.getCliente().setCpf(scanner.nextInt());
+
+             System.out.println("digite o endereço do cliente");
+             locacao.getCliente().getEndereco().setBairro(scanner.next());
+             locacao.getCliente().getEndereco().setNumero(scanner.nextInt());
+             locacao.getCliente().getEndereco().setRua(scanner.next());
+
              break;
          case 3:
+
+             System.out.println("Bem vindo ao Cadastro dos Livros");
              System.out.println("Menu livro");
+
+             System.out.println("Digite o titulo do livro");
+             locacao.getLivro().setTitulo(scanner.next());
+
+             System.out.println("Digite o genero do Livro");
+             locacao.getLivro().setGenero(scanner.next());
+
+             System.out.println("Digite o autor do Livro");
+             locacao.getLivro().setAutor(scanner.next());
+
              break;
          case 4:
+
              System.out.println("Menu dados do cadastro");
+
              break;
          case 5:
              System.out.println("Menu locacao");
