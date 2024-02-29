@@ -74,8 +74,41 @@ public class Main {
 
              break;
          case 4:
+             do {
 
-             System.out.println("Menu dados do cadastro");
+                 System.out.print("Selecione o cadastro na qual o mesmo queira acessar: \n"
+                     + "1 - Cadastro do Funcionário: \n"
+                     + "2 - Cadastro do Usuário \n"
+                     + "3 - Cadastro do livro\n"
+                     + "9 - Voltar ao menu principal\n"
+                     + "Digite a opção desejada: ");
+
+                 opcao = scanner.nextInt();
+                 switch (opcao){
+                     case  1:
+                         System.out.println("cadastro de funcionario");
+                         break;
+
+                     case 2:
+                         System.out.println("cadastro de cliente");
+                         break;
+
+                     case 3:
+                         System.out.println("cadastro de livro");
+                         break;
+
+                     default:
+                         System.out.println("opcao invalia");
+
+                 }
+
+             }while (opcao != 9);
+
+
+
+
+
+
 
              break;
          case 5:
