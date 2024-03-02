@@ -1,4 +1,3 @@
-import javax.print.attribute.standard.CopiesSupported;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -87,28 +86,24 @@ public class Main {
                  switch (opcao){
                      case  1:
                          System.out.println("cadastro de funcionario");
+                         System.out.println(locacao.getFuncionario().toString());
                          break;
 
                      case 2:
                          System.out.println("cadastro de cliente");
+                         System.out.println(locacao.getCliente().toString());
                          break;
 
                      case 3:
                          System.out.println("cadastro de livro");
+                         //TODO:IMPLEMENTAR TO STRING
                          break;
 
                      default:
                          System.out.println("opcao invalia");
-
                  }
 
              }while (opcao != 9);
-
-
-
-
-
-
 
              break;
          case 5:
@@ -119,7 +114,7 @@ public class Main {
      }
 
       }
- while  (opcao != 9);
+ while  (opcao != 0);
 
     }
 }
