@@ -40,5 +40,13 @@ public class Livro {
         this.status = status;
     }
 
-    //TODO:IMPLEMENTAR TO STRING
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", genero='" + genero + '\'' +
+                ", autor='" + autor + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }
