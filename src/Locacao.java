@@ -18,6 +18,13 @@ public class Locacao {
 
     private Livro livroLocado;
 
+    public Locacao() {
+        this.funcionario = new Funcionario();
+        this.cliente = new Cliente();
+        this.livro = new Livro();
+        this.livroLocado = new Livro();
+    }
+
     public double getValorLocacao() {
         return valorLocacao;
     }

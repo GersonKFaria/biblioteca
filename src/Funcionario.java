@@ -6,6 +6,10 @@ public class Funcionario {
 
     private Endereco endereco;
 
+    public Funcionario() {
+        this.endereco = new Endereco();
+    }
+
     public String getNome() {
         return nome;
     }
